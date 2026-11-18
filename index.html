@@ -1,0 +1,1342 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Abdullah Sadeq - Data Analyst and Business Intelligence Specialist Portfolio">
+    <title>Abdullah Sadeq | Data Analyst</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Dashboard Project Images */
+        .project-dashboard-image {
+            width: 100%;
+            height: 100%;
+            min-height: 230px;
+            display: block;
+            object-fit: contain;
+            object-position: center;
+            background: #050b22;
+        }
+
+        .project-visual.dashboard-visual {
+            height: auto;
+            min-height: 230px;
+            overflow: hidden;
+            padding: 0;
+            background: #050b22;
+            border: 1px solid rgba(70, 145, 255, .25);
+        }
+
+        .project-visual.dashboard-visual img {
+            transition: transform .35s ease;
+        }
+
+        .project-card:hover .project-visual.dashboard-visual img {
+            transform: scale(1.025);
+        }
+
+        .demo-note {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 12px;
+            padding: 5px 10px;
+            border: 1px solid rgba(72, 155, 255, .28);
+            border-radius: 20px;
+            color: #9fcaff;
+            background: rgba(28, 91, 170, .12);
+            font-size: 11px;
+            letter-spacing: .3px;
+        }
+
+        .demo-note::before {
+            content: "";
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: #42d7a0;
+            box-shadow: 0 0 8px #42d7a0;
+        }
+
+        /* Certifications */
+        .certifications-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 22px;
+        }
+
+        .certificate-card {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            padding: 25px;
+            border: 1px solid rgba(70, 145, 255, .2);
+            border-radius: 14px;
+            background: rgba(255, 255, 255, .035);
+        }
+
+        .certificate-icon {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            color: #9fcaff;
+            background: rgba(28, 91, 170, .2);
+            font-weight: 700;
+            font-size: 17px;
+        }
+
+        .certificate-provider {
+            display: block;
+            margin-bottom: 8px;
+            color: #60a5fa;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .certificate-card h3 {
+            margin-bottom: 8px;
+        }
+
+        .certificate-card p {
+            opacity: .75;
+            line-height: 1.6;
+        }
+
+        .certificate-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: auto;
+        }
+
+        .certificate-actions a {
+            text-decoration: none;
+        }
+
+        /* Contact */
+        .contact-links {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 18px;
+        }
+
+        .contact-links a {
+            text-decoration: none;
+        }
+
+        .contact-phone {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 14px;
+            margin-top: 25px;
+        }
+
+        .contact-phone a {
+            color: #9fcaff;
+            text-decoration: none;
+            padding: 10px 16px;
+            border: 1px solid rgba(70, 145, 255, .25);
+            border-radius: 10px;
+        }
+
+        .contact-phone a:hover {
+            background: rgba(28, 91, 170, .15);
+        }
+
+        /* Professional Achievements */
+        .achievements-section {
+            position: relative;
+        }
+
+        .achievement-card {
+            transition: transform .3s ease, border-color .3s ease;
+        }
+
+        .achievement-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(70, 145, 255, .5);
+        }
+
+        .achievement-card .skill-icon {
+            margin-bottom: 18px;
+        }
+
+        .achievement-card h3 {
+            margin-bottom: 12px;
+        }
+
+        .achievement-card p {
+            line-height: 1.7;
+        }
+
+        /* Technical Skills Improvements */
+        .skills-intro {
+            max-width: 750px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .skills-grid .skill-card {
+            transition: transform .3s ease, border-color .3s ease;
+        }
+
+        .skills-grid .skill-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(70, 145, 255, .5);
+        }
+
+        .skills-grid .skill-card p {
+            line-height: 1.8;
+        }
+
+        @media (max-width: 700px) {
+            .certifications-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .project-visual.dashboard-visual,
+            .project-dashboard-image {
+                min-height: 175px;
+            }
+
+            .certificate-actions {
+                flex-direction: column;
+            }
+
+            .certificate-actions a {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <header class="navbar">
+
+        <a href="#home" class="logo">ABDULLAH<span>.</span></a>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#certifications">Certificates</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="#contact" class="nav-button">Let's Connect</a>
+
+    </header>
+
+
+    <main>
+
+        <!-- HERO SECTION -->
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    DATA ANALYST & BUSINESS INTELLIGENCE SPECIALIST
+                </p>
+
+                <h1>
+                    Turning Data Into
+                    <span>Meaningful Insights.</span>
+                </h1>
+
+                <p class="hero-description">
+                    I transform complex business data into actionable insights,
+                    interactive dashboards, and data-driven solutions that
+                    support smarter business decisions.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="primary-button">Explore My Work</a>
+                    <a href="#contact" class="secondary-button">Get In Touch</a>
+                    <a href="assets/Abdullah-Sadeq-CV.pdf"
+                       download="Abdullah-Sadeq-CV.pdf"
+                       class="primary-button">
+                        Download CV ↓
+                    </a>
+                </div>
+
+                <div class="hero-skills">
+                    <span>SQL Server</span>
+                    <span>Power BI</span>
+                    <span>DAX</span>
+                    <span>Microsoft Fabric</span>
+                    <span>Excel</span>
+                </div>
+
+            </div>
+
+            <div class="hero-visual">
+
+                <div class="visual-card">
+
+                    <div class="visual-header">
+                        <span>BUSINESS INTELLIGENCE</span>
+                        <span class="live-dot"></span>
+                    </div>
+
+                    <div class="chart-placeholder">
+                        <div class="chart-bar bar-1"></div>
+                        <div class="chart-bar bar-2"></div>
+                        <div class="chart-bar bar-3"></div>
+                        <div class="chart-bar bar-4"></div>
+                        <div class="chart-bar bar-5"></div>
+                        <div class="chart-bar bar-6"></div>
+                    </div>
+
+                    <div class="visual-footer">
+                        <span>DATA ANALYTICS</span>
+                        <span>INSIGHTS & STRATEGY</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT ME -->
+
+        <section class="about" id="about">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">ABOUT ME</p>
+
+                <h2>
+                    Turning Business Data Into
+                    <span>Strategic Insights</span>
+                </h2>
+
+            </div>
+
+            <div class="about-content">
+
+                <div class="about-text">
+
+                    <p>
+                        I am a Data Analyst with nearly 4 years of professional experience
+                        in Data Analytics, Business Intelligence, and business reporting.
+                    </p>
+
+                    <p>
+                        Throughout my career, I have worked with different business functions,
+                        including Supply Chain, Sales, Inventory Management, and IT,
+                        transforming complex business data into meaningful insights
+                        that support strategic decision-making.
+                    </p>
+
+                    <p>
+                        I specialize in extracting and analyzing data using SQL Server,
+                        developing interactive dashboards with Power BI and DAX,
+                        and delivering business reports through Microsoft Fabric
+                        and Excel.
+                    </p>
+
+                    <p>
+                        My goal is to bridge the gap between data and business decisions
+                        by building reliable, insightful, and impactful analytical solutions.
+                    </p>
+
+                </div>
+
+                <div class="about-highlights">
+
+                    <div class="highlight-card">
+                        <h3>SQL</h3>
+                        <p>Data Extraction & Analysis</p>
+                    </div>
+
+                    <div class="highlight-card">
+                        <h3>BI</h3>
+                        <p>Interactive Dashboards</p>
+                    </div>
+
+                    <div class="highlight-card">
+                        <h3>Data</h3>
+                        <p>Business Performance Analysis</p>
+                    </div>
+
+                    <div class="highlight-card">
+                        <h3>IT</h3>
+                        <p>Business Reporting Solutions</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- TECHNICAL SKILLS -->
+
+        <section class="skills" id="skills">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">TECHNICAL EXPERTISE</p>
+
+                <h2>Tools & <span>Technologies</span></h2>
+
+                <p class="skills-intro">
+                    A comprehensive toolkit for data extraction, business intelligence,
+                    analytics, and transforming business data into actionable insights.
+                </p>
+
+            </div>
+
+            <div class="skills-grid">
+
+                <!-- SQL & DATABASE -->
+
+                <div class="skill-card">
+                    <div class="skill-icon">SQL</div>
+                    <h3>SQL & Database</h3>
+                    <p>
+                        SQL Server, Complex Queries, Joins, CTEs,
+                        Data Extraction, Data Cleaning
+                    </p>
+                </div>
+
+                <!-- POWER BI -->
+
+                <div class="skill-card">
+                    <div class="skill-icon">BI</div>
+                    <h3>Power BI & DAX</h3>
+                    <p>
+                        Interactive Dashboards, DAX Measures,
+                        Data Modeling, KPI Development, Performance Analysis
+                    </p>
+                </div>
+
+                <!-- MICROSOFT FABRIC -->
+
+                <div class="skill-card">
+                    <div class="skill-icon">FAB</div>
+                    <h3>Microsoft Fabric</h3>
+                    <p>
+                        Power BI Service, Data Integration,
+                        Semantic Models, Report Publishing and Refresh
+                    </p>
+                </div>
+
+                <!-- EXCEL -->
+
+                <div class="skill-card">
+                    <div class="skill-icon">XLS</div>
+                    <h3>Microsoft Excel</h3>
+                    <p>
+                        Advanced Excel, Data Analysis,
+                        Reporting, Forecasting, Supply Planning
+                    </p>
+                </div>
+
+                <!-- PYTHON -->
+
+                <div class="skill-card">
+                    <div class="skill-icon">PY</div>
+                    <h3>Python</h3>
+                    <p>
+                        Python Fundamentals, Data Manipulation,
+                        Data Analysis, Pandas
+                    </p>
+                </div>
+
+                <!-- DATA ANALYTICS -->
+
+                <div class="skill-card">
+                    <div class="skill-icon">DA</div>
+                    <h3>Data Analytics</h3>
+                    <p>
+                        Data Cleaning, Trend Analysis,
+                        KPI Monitoring, Business Reporting,
+                        Data Visualization
+                    </p>
+                </div>
+
+                <!-- SUPPLY CHAIN -->
+
+                <div class="skill-card">
+                    <div class="skill-icon">SCM</div>
+                    <h3>Supply Chain Analytics</h3>
+                    <p>
+                        Demand Planning, Inventory Analysis,
+                        Stock Availability, Procurement Planning,
+                        Forecasting
+                    </p>
+                </div>
+
+                <!-- BUSINESS SYSTEMS -->
+
+                <div class="skill-card">
+                    <div class="skill-icon">ERP</div>
+                    <h3>Business Systems & ERP</h3>
+                    <p>
+                        Odoo 16, Business Data Analysis,
+                        Product Categorization, Reporting Requirements
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FEATURED PROJECTS -->
+
+        <section class="projects" id="projects">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">MY WORK</p>
+
+                <h2>Featured <span>Projects</span></h2>
+
+                <p class="skills-intro">
+                    A selection of analytical projects focused on solving
+                    business problems through data.
+                </p>
+
+            </div>
+
+            <div class="projects-grid">
+
+
+                <!-- PROJECT 1 -->
+
+                <article class="project-card">
+
+                    <div class="project-visual dashboard-visual">
+
+                        <img
+                            class="project-dashboard-image"
+                            src="assets/dashboard-01-daily-sales-and-customer.png"
+                            alt="Daily Sales Performance and Customer Purchase Analytics Dashboard"
+                            loading="lazy">
+
+                    </div>
+
+                    <div class="project-info">
+
+                        <span class="project-category">
+                            BUSINESS INTELLIGENCE
+                        </span>
+
+                        <h3>Daily Sales Performance Dashboard</h3>
+
+                        <p>
+                            A sales performance dashboard concept for monitoring sales trends,
+                            target achievement, branch performance, product categories,
+                            sales channels, and key business indicators.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>SQL Server</span>
+                            <span>Power BI</span>
+                            <span>DAX</span>
+                            <span>Sales Analytics</span>
+                        </div>
+
+                        <a href="daily-sales.html" class="primary-button">
+                            View Project →
+                        </a>
+
+                        <span class="demo-note">
+                            Anonymized portfolio demo · Sample data
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECT 2 -->
+
+                <article class="project-card">
+
+                    <div class="project-visual dashboard-visual">
+
+                        <img
+                            class="project-dashboard-image"
+                            src="assets/dashboard-02-sales-and-customer-analysis.png"
+                            alt="Sales Performance and Customer Purchase Analysis Dashboard"
+                            loading="lazy">
+
+                    </div>
+
+                    <div class="project-info">
+
+                        <span class="project-category">
+                            CUSTOMER & SALES ANALYTICS
+                        </span>
+
+                        <h3>Customer Purchase Analysis Dashboard</h3>
+
+                        <p>
+                            Analyzing customer segments, purchase frequency, average purchase value,
+                            customer trends, top customers, and the distribution of purchasing behavior.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>SQL Server</span>
+                            <span>Power BI</span>
+                            <span>DAX</span>
+                            <span>Customer Analytics</span>
+                        </div>
+
+                        <a href="customer-analysis.html" class="primary-button">
+                            View Project →
+                        </a>
+
+                        <span class="demo-note">
+                            Anonymized portfolio demo · Sample data
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECT 3 -->
+
+                <article class="project-card">
+
+                    <div class="project-visual dashboard-visual">
+
+                        <img
+                            class="project-dashboard-image"
+                            src="assets/dashboard-03-customer-and-daily-sales.png"
+                            alt="Customer Purchase Analysis and Daily Sales Performance Dashboard"
+                            loading="lazy">
+
+                    </div>
+
+                    <div class="project-info">
+
+                        <span class="project-category">
+                            EXECUTIVE REPORTING
+                        </span>
+
+                        <h3>Sales & Customer Analytics Overview</h3>
+
+                        <p>
+                            A consolidated business intelligence view combining sales performance
+                            and customer insights to help management review business trends and
+                            compare key performance indicators.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Power BI</span>
+                            <span>DAX</span>
+                            <span>Executive Reporting</span>
+                            <span>KPI Analysis</span>
+                        </div>
+
+                        <a href="sales-analytics.html" class="primary-button">
+                            View Project →
+                        </a>
+
+                        <span class="demo-note">
+                            Anonymized portfolio demo · Sample data
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECT 4 -->
+
+                <article class="project-card">
+
+                    <div class="project-visual stock-visual">
+
+                        <div class="project-visual-label">
+                            INVENTORY ANALYTICS
+                        </div>
+
+                        <div class="stock-metrics">
+
+                            <div>
+                                <small>STOCK</small>
+                                <strong>Analysis</strong>
+                            </div>
+
+                            <div>
+                                <small>SALES</small>
+                                <strong>Analysis</strong>
+                            </div>
+
+                        </div>
+
+                        <div class="stock-line"></div>
+
+                    </div>
+
+                    <div class="project-info">
+
+                        <span class="project-category">
+                            SUPPLY CHAIN ANALYTICS
+                        </span>
+
+                        <h3>Stockout & Lost Sales Analysis</h3>
+
+                        <p>
+                            Analyzing inventory movements and product availability,
+                            identifying stockout periods, and estimating potential
+                            lost sales opportunities.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Power BI</span>
+                            <span>DAX</span>
+                            <span>Inventory Analytics</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECT 5 -->
+
+                <article class="project-card">
+
+                    <div class="project-visual supply-visual">
+
+                        <div class="project-visual-label">
+                            SUPPLY CHAIN PLANNING
+                        </div>
+
+                        <div class="supply-boxes">
+                            <div>DEMAND</div>
+                            <div>STOCK</div>
+                            <div>PLAN</div>
+                        </div>
+
+                    </div>
+
+                    <div class="project-info">
+
+                        <span class="project-category">
+                            PLANNING & ANALYTICS
+                        </span>
+
+                        <h3>Supply Chain Planning</h3>
+
+                        <p>
+                            Developing supply plans using sales history,
+                            inventory analysis, product availability,
+                            and demand planning in Microsoft Excel.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Excel</span>
+                            <span>Forecasting</span>
+                            <span>Supply Chain</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROFESSIONAL EXPERIENCE -->
+
+        <section class="experience" id="experience">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">CAREER JOURNEY</p>
+
+                <h2>Professional <span>Experience</span></h2>
+
+                <p class="skills-intro">
+                    My professional journey in data analytics,
+                    business intelligence, and business operations.
+                </p>
+
+            </div>
+
+            <div class="experience-list">
+
+
+                <!-- INNOVADIGITS -->
+
+                <article class="experience-card">
+
+                    <div class="experience-date">
+                        JAN 2023 — APR 2024
+                    </div>
+
+                    <div class="experience-details">
+
+                        <h3>Data Analyst</h3>
+
+                        <h4>Innovadigits</h4>
+
+                        <p class="experience-location">Egypt</p>
+
+                        <ul>
+
+                            <li>
+                                Cleaned and analyzed business datasets
+                                to identify trends and useful insights.
+                            </li>
+
+                            <li>
+                                Prepared reports and visualizations
+                                to support business understanding and
+                                operational decision-making.
+                            </li>
+
+                            <li>
+                                Used Excel and analytical techniques
+                                to organize data and communicate findings.
+                            </li>
+
+                        </ul>
+
+                        <div class="project-tags">
+                            <span>Data Analysis</span>
+                            <span>Excel</span>
+                            <span>Reporting</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ALOYAYRI GROUP - SUPPLY CHAIN -->
+
+                <article class="experience-card">
+
+                    <div class="experience-date">
+                        APR 2024 — OCT 2025
+                    </div>
+
+                    <div class="experience-details">
+
+                        <h3>Data Analyst & Supply Chain Planner</h3>
+
+                        <h4>Al Oyayri Group</h4>
+
+                        <p class="experience-location">Saudi Arabia</p>
+
+                        <ul>
+
+                            <li>
+                                Prepared quarterly procurement plans
+                                for imported products and monthly plans
+                                for locally manufactured products.
+                            </li>
+
+                            <li>
+                                Forecast raw-material requirements for
+                                six-month production periods using
+                                historical and projected sales data.
+                            </li>
+
+                            <li>
+                                Analyzed sales trends, inventory levels,
+                                stock availability, and slow-moving items
+                                to support purchasing and replenishment decisions.
+                            </li>
+
+                            <li>
+                                Supported product categorization,
+                                stock transfers, and product mapping
+                                activities in Odoo 16.
+                            </li>
+
+                            <li>
+                                Developed the 2025 supply plan using
+                                Microsoft Excel to support procurement
+                                and supply planning.
+                            </li>
+
+                        </ul>
+
+                        <div class="project-tags">
+                            <span>Supply Chain</span>
+                            <span>Excel</span>
+                            <span>Demand Planning</span>
+                            <span>Odoo 16</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ALOYAYRI GROUP - IT -->
+
+                <article class="experience-card">
+
+                    <div class="experience-date">
+                        NOV 2025 — PRESENT
+                    </div>
+
+                    <div class="experience-details">
+
+                        <h3>Data Analyst | IT Analytics</h3>
+
+                        <h4>Al Oyayri Group</h4>
+
+                        <p class="experience-location">Saudi Arabia</p>
+
+                        <ul>
+
+                            <li>
+                                Develop company-wide analytical reports
+                                and dashboards for multiple business departments.
+                            </li>
+
+                            <li>
+                                Extract and analyze data from SQL Server
+                                and connect business data sources with
+                                Microsoft Fabric and Power BI Service.
+                            </li>
+
+                            <li>
+                                Design interactive Power BI dashboards
+                                and executive reports to monitor business
+                                performance and operational KPIs.
+                            </li>
+
+                            <li>
+                                Analyze sales, returns, discounts,
+                                inventory, customer performance,
+                                and showroom operations.
+                            </li>
+
+                            <li>
+                                Translate reporting requirements from
+                                different departments into analytical
+                                solutions and management reports.
+                            </li>
+
+                            <li>
+                                Support data standardization,
+                                subscription monitoring, and
+                                business reporting automation.
+                            </li>
+
+                        </ul>
+
+                        <div class="project-tags">
+                            <span>SQL Server</span>
+                            <span>Power BI</span>
+                            <span>Microsoft Fabric</span>
+                            <span>DAX</span>
+                            <span>Business Intelligence</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROFESSIONAL ACHIEVEMENTS -->
+
+        <section class="skills achievements-section" id="achievements">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">PROFESSIONAL ACHIEVEMENTS</p>
+
+                <h2>Business Impact & <span>Key Contributions</span></h2>
+
+                <p class="skills-intro">
+                    Delivering data-driven solutions, business intelligence reports,
+                    and analytical insights to support organizational performance
+                    and strategic decision-making.
+                </p>
+
+            </div>
+
+            <div class="skills-grid">
+
+                <!-- ACHIEVEMENT 1 -->
+
+                <div class="skill-card achievement-card">
+
+                    <div class="skill-icon">BI</div>
+
+                    <h3>Company-Wide Reporting</h3>
+
+                    <p>
+                        Developed analytical reports and interactive dashboards
+                        for multiple departments, supporting operational monitoring
+                        and management decision-making across the organization.
+                    </p>
+
+                </div>
+
+
+                <!-- ACHIEVEMENT 2 -->
+
+                <div class="skill-card achievement-card">
+
+                    <div class="skill-icon">SQL</div>
+
+                    <h3>Data Integration & Analytics</h3>
+
+                    <p>
+                        Extracted and analyzed business data from SQL Server
+                        and connected data sources with Microsoft Fabric
+                        and Power BI Service to support centralized reporting.
+                    </p>
+
+                </div>
+
+
+                <!-- ACHIEVEMENT 3 -->
+
+                <div class="skill-card achievement-card">
+
+                    <div class="skill-icon">KPI</div>
+
+                    <h3>Executive Dashboards</h3>
+
+                    <p>
+                        Designed professional Power BI dashboards and KPI reports
+                        to provide management with clear visibility into business
+                        performance and operational indicators.
+                    </p>
+
+                </div>
+
+
+                <!-- ACHIEVEMENT 4 -->
+
+                <div class="skill-card achievement-card">
+
+                    <div class="skill-icon">SA</div>
+
+                    <h3>Sales & Customer Analytics</h3>
+
+                    <p>
+                        Developed analytical solutions covering sales performance,
+                        customer behavior, discounts, returns, product performance,
+                        and showroom operations.
+                    </p>
+
+                </div>
+
+
+                <!-- ACHIEVEMENT 5 -->
+
+                <div class="skill-card achievement-card">
+
+                    <div class="skill-icon">INV</div>
+
+                    <h3>Inventory & Stock Availability</h3>
+
+                    <p>
+                        Analyzed inventory movements, product availability,
+                        stockout periods, and potential lost sales opportunities
+                        to support better inventory decisions.
+                    </p>
+
+                </div>
+
+
+                <!-- ACHIEVEMENT 6 -->
+
+                <div class="skill-card achievement-card">
+
+                    <div class="skill-icon">SCM</div>
+
+                    <h3>Supply Chain Planning</h3>
+
+                    <p>
+                        Prepared supply and procurement plans, forecasted
+                        raw material requirements, and analyzed historical
+                        sales and inventory data to support replenishment planning.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CERTIFICATIONS -->
+
+        <section class="certifications" id="certifications">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">CONTINUOUS LEARNING</p>
+
+                <h2>Certifications & <span>Training</span></h2>
+
+                <p class="skills-intro">
+                    Professional learning and technical certifications
+                    supporting my analytical and data engineering skills.
+                </p>
+
+            </div>
+
+            <div class="certifications-grid">
+
+                <!-- CERTIFICATE 1 -->
+
+                <div class="certificate-card">
+
+                    <div class="certificate-icon">
+                        <span>DC</span>
+                    </div>
+
+                    <div>
+                        <span class="certificate-provider">DATACAMP</span>
+                        <h3>Data Analyst in Python</h3>
+                        <p>Python · Data Analysis</p>
+                    </div>
+
+                    <div class="certificate-actions">
+                        <a href="assets/certificates/data-analyst-python.pdf"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="primary-button">
+                            View Certificate →
+                        </a>
+
+                        <a href="assets/certificates/data-analyst-python.pdf"
+                           download
+                           class="secondary-button">
+                            Download PDF ↓
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <!-- CERTIFICATE 2 -->
+
+                <div class="certificate-card">
+
+                    <div class="certificate-icon">
+                        <span>DC</span>
+                    </div>
+
+                    <div>
+                        <span class="certificate-provider">DATACAMP</span>
+                        <h3>Data Engineer in Python</h3>
+                        <p>Python · Data Engineering</p>
+                    </div>
+
+                    <div class="certificate-actions">
+                        <a href="assets/certificates/data-engineer-python.pdf"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="primary-button">
+                            View Certificate →
+                        </a>
+
+                        <a href="assets/certificates/data-engineer-python.pdf"
+                           download
+                           class="secondary-button">
+                            Download PDF ↓
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <!-- CERTIFICATE 3 -->
+
+                <div class="certificate-card">
+
+                    <div class="certificate-icon">
+                        <span>DC</span>
+                    </div>
+
+                    <div>
+                        <span class="certificate-provider">DATACAMP</span>
+                        <h3>Associate Data Engineer in SQL</h3>
+                        <p>SQL · Data Engineering</p>
+                    </div>
+
+                    <div class="certificate-actions">
+                        <a href="assets/certificates/associate-data-engineer-sql.pdf"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="primary-button">
+                            View Certificate →
+                        </a>
+
+                        <a href="assets/certificates/associate-data-engineer-sql.pdf"
+                           download
+                           class="secondary-button">
+                            Download PDF ↓
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <!-- POWER BI TRAINING -->
+
+                <div class="certificate-card">
+
+                    <div class="certificate-icon">
+                        <span>U</span>
+                    </div>
+
+                    <div>
+                        <span class="certificate-provider">UDEMY · MAVEN ANALYTICS</span>
+                        <h3>Microsoft Power BI for Business Intelligence</h3>
+                        <p>Power BI · Business Intelligence</p>
+                    </div>
+
+                    <p>Training and professional development.</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- EDUCATION -->
+
+        <section class="education" id="education">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">ACADEMIC BACKGROUND</p>
+
+                <h2>Education</h2>
+
+            </div>
+
+            <div class="education-card">
+
+                <div class="education-icon">EDU</div>
+
+                <div>
+
+                    <h3>Bachelor of Communications and Information Engineering</h3>
+
+                    <p>Faculty of Engineering, Mansoura University</p>
+
+                    <span>2018 — 2023</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT -->
+
+        <section class="contact" id="contact">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">GET IN TOUCH</p>
+
+                <h2>Let's Work <span>Together</span></h2>
+
+                <p class="skills-intro">
+                    Interested in data analytics, business intelligence,
+                    or new professional opportunities? Feel free to connect.
+                </p>
+
+            </div>
+
+            <div class="contact-links">
+
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=abdallahsadeq72@gmail.com"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="primary-button">
+                    Email Me →
+                </a>
+
+                <a href="https://www.linkedin.com/in/abdullah-sadeq-3972091b6/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    LinkedIn
+                </a>
+
+                <a href="https://github.com/AbdullahSadeq"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    GitHub
+                </a>
+
+            </div>
+
+            <div class="contact-phone">
+
+                <a href="tel:+966500184086">
+                    Call: +966 50 018 4086
+                </a>
+
+                <a href="https://wa.me/966500184086"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    WhatsApp Me
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <p>© 2026 Abdullah Sadeq. All Rights Reserved.</p>
+
+        <p>Turning Data Into Meaningful Insights.</p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sales and Customer Analytics Overview - Abdullah Elsayed Portfolio">
+    <title>Sales & Customer Analytics | Abdullah Elsayed</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .project-detail {
+            max-width: 1150px;
+            margin: auto;
+            padding: 120px 24px 70px;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #60a5fa;
+            text-decoration: none;
+            margin-bottom: 28px;
+        }
+
+        .project-header {
+            margin-bottom: 35px;
+        }
+
+        .project-header h1 {
+            font-size: clamp(2rem, 5vw, 3.2rem);
+            margin-bottom: 15px;
+        }
+
+        .project-header p {
+            max-width: 800px;
+            line-height: 1.8;
+            opacity: .8;
+        }
+
+        .project-label {
+            color: #60a5fa;
+            font-weight: 600;
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .dashboard-preview {
+            margin: 35px 0 55px;
+            padding: 12px;
+            background: rgba(255,255,255,.04);
+            border: 1px solid rgba(255,255,255,.1);
+            border-radius: 16px;
+        }
+
+        .dashboard-preview img {
+            width: 100%;
+            display: block;
+            border-radius: 10px;
+        }
+
+        .detail-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 22px;
+        }
+
+        .detail-card {
+            padding: 25px;
+            border: 1px solid rgba(255,255,255,.1);
+            background: rgba(255,255,255,.035);
+            border-radius: 14px;
+        }
+
+        .detail-card h2 {
+            font-size: 1.25rem;
+            margin-bottom: 16px;
+            color: #60a5fa;
+        }
+
+        .detail-card p,
+        .detail-card li {
+            line-height: 1.8;
+            opacity: .85;
+        }
+
+        .detail-card ul {
+            padding-left: 20px;
+        }
+
+        .detail-card li {
+            margin-bottom: 8px;
+        }
+
+        .tools-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tools-list span {
+            padding: 8px 14px;
+            border-radius: 30px;
+            background: rgba(59,130,246,.12);
+            border: 1px solid rgba(96,165,250,.25);
+            font-size: .9rem;
+        }
+
+        .project-note {
+            margin-top: 35px;
+            padding: 18px 22px;
+            border-left: 3px solid #60a5fa;
+            background: rgba(255,255,255,.04);
+            line-height: 1.8;
+            opacity: .8;
+        }
+
+        .page-footer {
+            text-align: center;
+            padding: 25px;
+            opacity: .65;
+            border-top: 1px solid rgba(255,255,255,.08);
+        }
+
+        @media (max-width: 700px) {
+            .detail-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .project-detail {
+                padding-top: 100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="project-detail">
+
+        <a href="index.html#projects" class="back-link">
+            ← Back to Projects
+        </a>
+
+        <header class="project-header">
+            <span class="project-label">BUSINESS INTELLIGENCE PROJECT</span>
+
+            <h1>Sales & Customer Analytics Overview</h1>
+
+            <p>
+                An integrated business intelligence dashboard that combines
+                sales performance indicators with customer analytics to
+                provide a comprehensive view of business performance,
+                revenue trends, and customer contribution.
+            </p>
+        </header>
+
+        <section class="dashboard-preview">
+            <img
+                src="assets/dashboard-03-customer-and-daily-sales.png"
+                alt="Sales and Customer Analytics Dashboard Preview">
+        </section>
+
+        <section class="detail-grid">
+
+            <article class="detail-card">
+                <h2>Project Overview</h2>
+                <p>
+                    This project provides a consolidated overview of sales
+                    and customer performance through interactive data
+                    visualizations.
+
+                    It helps management monitor key business indicators,
+                    evaluate sales trends, and understand the relationship
+                    between customer activity and revenue generation.
+                </p>
+            </article>
+
+            <article class="detail-card">
+                <h2>Business Objectives</h2>
+                <ul>
+                    <li>Monitor overall sales performance.</li>
+                    <li>Track customer growth and activity.</li>
+                    <li>Understand revenue trends over time.</li>
+                    <li>Evaluate customer contribution to sales.</li>
+                    <li>Support management reporting and decisions.</li>
+                </ul>
+            </article>
+
+            <article class="detail-card">
+                <h2>Key Analysis Areas</h2>
+                <ul>
+                    <li>Total sales value and sales quantity.</li>
+                    <li>Monthly and daily sales trends.</li>
+                    <li>Total number of customers.</li>
+                    <li>Customer purchasing distribution.</li>
+                    <li>Top-performing customers.</li>
+                    <li>Sales performance comparisons.</li>
+                </ul>
+            </article>
+
+            <article class="detail-card">
+                <h2>Technical Approach</h2>
+                <ul>
+                    <li>Data extraction and preparation.</li>
+                    <li>Data transformation using Power Query.</li>
+                    <li>Building a structured data model.</li>
+                    <li>Developing DAX measures and KPIs.</li>
+                    <li>Designing interactive dashboards.</li>
+                </ul>
+            </article>
+
+            <article class="detail-card">
+                <h2>Tools & Technologies</h2>
+                <div class="tools-list">
+                    <span>Power BI</span>
+                    <span>DAX</span>
+                    <span>SQL Server</span>
+                    <span>Power Query</span>
+                    <span>Data Modeling</span>
+                    <span>Data Analytics</span>
+                </div>
+            </article>
+
+            <article class="detail-card">
+                <h2>Business Value</h2>
+                <p>
+                    The dashboard provides management with a unified view
+                    of sales and customer performance, helping identify
+                    trends, evaluate business results, and make informed
+                    decisions based on reliable performance indicators.
+                </p>
+            </article>
+
+        </section>
+
+        <div class="project-note">
+            <strong>Portfolio Demo:</strong>
+            This dashboard preview uses fictional sample data and is
+            intended to demonstrate analytical concepts and visualization
+            capabilities. It does not contain confidential company data.
+        </div>
+
+    </main>
+
+    <footer class="page-footer">
+        <p>© 2026 Abdullah Elsayed | Data Analyst & BI Specialist</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

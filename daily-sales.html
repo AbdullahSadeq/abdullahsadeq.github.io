@@ -1,0 +1,492 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Daily Sales Performance Dashboard - Abdullah Elsayed Data Analyst Portfolio">
+
+    <title>Daily Sales Performance | Abdullah Elsayed</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .project-details {
+            max-width: 1150px;
+            margin: auto;
+            padding: 100px 6% 70px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 35px;
+            color: #8dbdff;
+            text-decoration: none;
+        }
+
+        .project-hero {
+            margin-bottom: 45px;
+        }
+
+        .project-hero h1 {
+            font-size: clamp(32px, 5vw, 55px);
+            margin: 15px 0;
+        }
+
+        .project-hero h1 span {
+            color: #55a4ff;
+        }
+
+        .project-hero p {
+            max-width: 750px;
+            line-height: 1.9;
+            opacity: .8;
+        }
+
+        .project-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 25px;
+        }
+
+        .project-meta span,
+        .technology-tags span {
+            padding: 9px 15px;
+            border: 1px solid rgba(100,160,255,.25);
+            border-radius: 25px;
+            font-size: 13px;
+            background: rgba(40,90,160,.12);
+        }
+
+        .dashboard-preview {
+            margin: 35px 0 60px;
+            padding: 12px;
+            background: rgba(20,50,100,.2);
+            border: 1px solid rgba(80,150,255,.25);
+            border-radius: 15px;
+        }
+
+        .dashboard-preview img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 9px;
+        }
+
+        .detail-section {
+            margin: 55px 0;
+        }
+
+        .detail-section h2 {
+            font-size: 27px;
+            margin-bottom: 18px;
+        }
+
+        .detail-section h2 span {
+            color: #55a4ff;
+        }
+
+        .detail-section p {
+            line-height: 1.9;
+            opacity: .85;
+        }
+
+        .detail-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .detail-card {
+            padding: 25px;
+            border: 1px solid rgba(100,160,255,.2);
+            border-radius: 14px;
+            background: rgba(20,45,85,.18);
+        }
+
+        .detail-card h3 {
+            margin-bottom: 12px;
+            color: #80b9ff;
+        }
+
+        .detail-card p {
+            font-size: 14px;
+        }
+
+        .detail-list {
+            padding-left: 22px;
+            line-height: 2.2;
+            opacity: .85;
+        }
+
+        .technology-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .demo-disclaimer {
+            margin-top: 30px;
+            padding: 18px;
+            border-left: 3px solid #55a4ff;
+            background: rgba(50,110,190,.1);
+            line-height: 1.8;
+            font-size: 13px;
+        }
+
+        .project-footer {
+            text-align: center;
+            padding: 40px 15px;
+            border-top: 1px solid rgba(120,160,220,.15);
+        }
+
+        .project-footer a {
+            color: #80b9ff;
+            text-decoration: none;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            ABDULLAH<span>.</span>
+        </a>
+
+        <nav>
+            <a href="index.html#home">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#skills">Skills</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="index.html#experience">Experience</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+
+        <a href="index.html#contact" class="nav-button">
+            Let's Connect
+        </a>
+
+    </header>
+
+
+    <main class="project-details">
+
+        <a href="index.html#projects" class="back-link">
+            ← Back to Projects
+        </a>
+
+
+        <!-- PROJECT INTRODUCTION -->
+
+        <section class="project-hero">
+
+            <p class="eyebrow">
+                BUSINESS INTELLIGENCE PROJECT
+            </p>
+
+            <h1>
+                Daily Sales Performance
+                <span>Dashboard</span>
+            </h1>
+
+            <p>
+                An interactive business intelligence dashboard designed
+                to monitor daily sales performance, evaluate business
+                performance indicators, and provide insights into
+                sales trends and operational results.
+            </p>
+
+            <div class="project-meta">
+
+                <span>Power BI</span>
+                <span>SQL Server</span>
+                <span>DAX</span>
+                <span>Sales Analytics</span>
+
+            </div>
+
+        </section>
+
+
+        <!-- DASHBOARD PREVIEW -->
+
+        <section class="dashboard-preview">
+
+            <img
+                src="assets/dashboard-01-daily-sales-and-customer.png"
+                alt="Daily Sales Performance Dashboard">
+
+        </section>
+
+
+        <!-- PROJECT OVERVIEW -->
+
+        <section class="detail-section">
+
+            <h2>
+                Project <span>Overview</span>
+            </h2>
+
+            <p>
+                This project demonstrates how business sales data can
+                be transformed into an interactive reporting solution.
+
+                The dashboard provides a structured view of sales
+                performance, allowing business users to monitor
+                key metrics and explore performance across different
+                business dimensions.
+            </p>
+
+        </section>
+
+
+        <!-- BUSINESS OBJECTIVES -->
+
+        <section class="detail-section">
+
+            <h2>
+                Business <span>Objectives</span>
+            </h2>
+
+            <div class="detail-grid">
+
+                <div class="detail-card">
+
+                    <h3>Sales Monitoring</h3>
+
+                    <p>
+                        Monitor sales performance and track
+                        business results over time.
+                    </p>
+
+                </div>
+
+
+                <div class="detail-card">
+
+                    <h3>Target Achievement</h3>
+
+                    <p>
+                        Evaluate sales performance against
+                        business targets and identify gaps.
+                    </p>
+
+                </div>
+
+
+                <div class="detail-card">
+
+                    <h3>Performance Comparison</h3>
+
+                    <p>
+                        Compare performance across branches,
+                        sales channels, and product categories.
+                    </p>
+
+                </div>
+
+
+                <div class="detail-card">
+
+                    <h3>Decision Support</h3>
+
+                    <p>
+                        Provide management with clear insights
+                        to support business decisions.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ANALYSIS AREAS -->
+
+        <section class="detail-section">
+
+            <h2>
+                Key Analysis <span>Areas</span>
+            </h2>
+
+            <ul class="detail-list">
+
+                <li>
+                    Daily and monthly sales performance.
+                </li>
+
+                <li>
+                    Sales target achievement and performance gaps.
+                </li>
+
+                <li>
+                    Branch and sales point performance.
+                </li>
+
+                <li>
+                    Sales distribution across product categories.
+                </li>
+
+                <li>
+                    Sales channel performance analysis.
+                </li>
+
+                <li>
+                    Identification of sales trends and business patterns.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- TECHNICAL APPROACH -->
+
+        <section class="detail-section">
+
+            <h2>
+                Technical <span>Approach</span>
+            </h2>
+
+            <div class="detail-grid">
+
+                <div class="detail-card">
+
+                    <h3>Data Extraction</h3>
+
+                    <p>
+                        Using SQL Server to retrieve and organize
+                        business data for analytical reporting.
+                    </p>
+
+                </div>
+
+
+                <div class="detail-card">
+
+                    <h3>Data Modeling</h3>
+
+                    <p>
+                        Organizing data and defining relationships
+                        to support accurate analytical calculations.
+                    </p>
+
+                </div>
+
+
+                <div class="detail-card">
+
+                    <h3>Data Analysis</h3>
+
+                    <p>
+                        Applying DAX measures and analytical
+                        calculations to evaluate business KPIs.
+                    </p>
+
+                </div>
+
+
+                <div class="detail-card">
+
+                    <h3>Visualization</h3>
+
+                    <p>
+                        Designing interactive visual reports
+                        to communicate business performance clearly.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- TOOLS -->
+
+        <section class="detail-section">
+
+            <h2>
+                Tools & <span>Technologies</span>
+            </h2>
+
+            <div class="technology-tags">
+
+                <span>Microsoft Power BI</span>
+                <span>SQL Server</span>
+                <span>DAX</span>
+                <span>Data Modeling</span>
+                <span>Business Intelligence</span>
+                <span>Data Visualization</span>
+
+            </div>
+
+        </section>
+
+
+        <!-- BUSINESS VALUE -->
+
+        <section class="detail-section">
+
+            <h2>
+                Business <span>Value</span>
+            </h2>
+
+            <p>
+                The dashboard provides a consolidated view of sales
+                performance, helping management identify trends,
+                evaluate business results, compare operational
+                performance, and make more informed decisions
+                based on data.
+            </p>
+
+        </section>
+
+
+        <div class="demo-disclaimer">
+
+            <strong>Portfolio Demonstration:</strong>
+
+            This dashboard uses fictional sample data and
+            anonymized business information. It is presented
+            for portfolio and demonstration purposes only.
+
+        </div>
+
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="project-footer">
+
+        <p>
+            © 2026 Abdullah Elsayed. All Rights Reserved.
+        </p>
+
+        <p>
+            <a href="index.html#projects">
+                ← Explore More Projects
+            </a>
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

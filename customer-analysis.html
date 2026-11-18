@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Customer Purchase Analysis Dashboard - Data Analytics Portfolio">
+    <title>Customer Purchase Analysis | Abdullah Elsayed</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .project-detail {
+            max-width: 1150px;
+            margin: auto;
+            padding: 120px 24px 70px;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #60a5fa;
+            text-decoration: none;
+            margin-bottom: 28px;
+        }
+
+        .project-header {
+            margin-bottom: 35px;
+        }
+
+        .project-header h1 {
+            font-size: clamp(2rem, 5vw, 3.2rem);
+            margin-bottom: 15px;
+        }
+
+        .project-header p {
+            max-width: 800px;
+            line-height: 1.8;
+            opacity: .8;
+        }
+
+        .project-label {
+            color: #60a5fa;
+            font-weight: 600;
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .dashboard-preview {
+            margin: 35px 0 55px;
+            padding: 12px;
+            background: rgba(255,255,255,.04);
+            border: 1px solid rgba(255,255,255,.1);
+            border-radius: 16px;
+        }
+
+        .dashboard-preview img {
+            width: 100%;
+            display: block;
+            border-radius: 10px;
+        }
+
+        .detail-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 22px;
+        }
+
+        .detail-card {
+            padding: 25px;
+            border: 1px solid rgba(255,255,255,.1);
+            background: rgba(255,255,255,.035);
+            border-radius: 14px;
+        }
+
+        .detail-card h2 {
+            font-size: 1.25rem;
+            margin-bottom: 16px;
+            color: #60a5fa;
+        }
+
+        .detail-card p,
+        .detail-card li {
+            line-height: 1.8;
+            opacity: .85;
+        }
+
+        .detail-card ul {
+            padding-left: 20px;
+        }
+
+        .detail-card li {
+            margin-bottom: 8px;
+        }
+
+        .tools-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tools-list span {
+            padding: 8px 14px;
+            border-radius: 30px;
+            background: rgba(59,130,246,.12);
+            border: 1px solid rgba(96,165,250,.25);
+            font-size: .9rem;
+        }
+
+        .business-value {
+            margin-top: 22px;
+        }
+
+        .project-note {
+            margin-top: 35px;
+            padding: 18px 22px;
+            border-left: 3px solid #60a5fa;
+            background: rgba(255,255,255,.04);
+            line-height: 1.8;
+            opacity: .8;
+        }
+
+        .page-footer {
+            text-align: center;
+            padding: 25px;
+            opacity: .65;
+            border-top: 1px solid rgba(255,255,255,.08);
+        }
+
+        @media (max-width: 700px) {
+            .detail-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .project-detail {
+                padding-top: 100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="project-detail">
+
+        <a href="index.html#projects" class="back-link">
+            ← Back to Projects
+        </a>
+
+        <header class="project-header">
+            <span class="project-label">POWER BI PROJECT</span>
+
+            <h1>Customer Purchase Analysis Dashboard</h1>
+
+            <p>
+                An interactive customer analytics dashboard designed to
+                understand purchasing behavior, identify high-value customers,
+                analyze revenue distribution, and support data-driven
+                business decisions.
+            </p>
+        </header>
+
+        <section class="dashboard-preview">
+            <img
+                src="assets/dashboard-02-sales-and-customer-analysis.png"
+                alt="Customer Purchase Analysis Dashboard Preview">
+        </section>
+
+        <section class="detail-grid">
+
+            <article class="detail-card">
+                <h2>Project Overview</h2>
+                <p>
+                    This project focuses on analyzing customer purchasing
+                    patterns and understanding how customers contribute
+                    to overall business performance.
+
+                    The dashboard transforms sales transactions into
+                    meaningful insights that help management evaluate
+                    customer value and purchasing behavior.
+                </p>
+            </article>
+
+            <article class="detail-card">
+                <h2>Business Objectives</h2>
+                <ul>
+                    <li>Identify the highest-value customers.</li>
+                    <li>Understand customer purchasing behavior.</li>
+                    <li>Analyze revenue contribution by customer.</li>
+                    <li>Identify customer segments based on purchase value.</li>
+                    <li>Monitor customer activity and purchasing trends.</li>
+                </ul>
+            </article>
+
+            <article class="detail-card">
+                <h2>Key Analysis Areas</h2>
+                <ul>
+                    <li>Total sales and customer count.</li>
+                    <li>Customer distribution by purchase value.</li>
+                    <li>Top customers based on total purchases.</li>
+                    <li>Average purchase value per customer.</li>
+                    <li>Monthly customer purchasing trends.</li>
+                    <li>Customer contribution to total revenue.</li>
+                </ul>
+            </article>
+
+            <article class="detail-card">
+                <h2>Technical Approach</h2>
+                <ul>
+                    <li>Data extraction and preparation.</li>
+                    <li>Data cleaning and transformation.</li>
+                    <li>Data modeling and relationship management.</li>
+                    <li>DAX measures for customer and sales KPIs.</li>
+                    <li>Interactive visualizations and filtering.</li>
+                </ul>
+            </article>
+
+            <article class="detail-card">
+                <h2>Tools & Technologies</h2>
+                <div class="tools-list">
+                    <span>Power BI</span>
+                    <span>DAX</span>
+                    <span>SQL Server</span>
+                    <span>Power Query</span>
+                    <span>Data Modeling</span>
+                    <span>Data Visualization</span>
+                </div>
+            </article>
+
+            <article class="detail-card">
+                <h2>Business Value</h2>
+                <p>
+                    The dashboard helps decision-makers identify valuable
+                    customer segments, understand revenue concentration,
+                    recognize purchasing patterns, and support customer
+                    retention and sales strategies.
+                </p>
+            </article>
+
+        </section>
+
+        <div class="project-note">
+            <strong>Portfolio Demo:</strong>
+            This dashboard preview uses fictional sample data and is
+            intended to demonstrate analytical concepts and visualization
+            capabilities. It does not contain confidential company data.
+        </div>
+
+    </main>
+
+    <footer class="page-footer">
+        <p>© 2026 Abdullah Elsayed | Data Analyst & BI Specialist</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
